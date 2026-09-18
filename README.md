@@ -1,6 +1,6 @@
 # Snippet Automation 웹 테스트
 
-[웹에서 시작하기](https://cosuss.github.io/snippet-automation-releases/) · [PC 수집기 0.7.1](https://github.com/cosuss/snippet-automation-releases/releases/tag/collector-v0.7.1)
+[웹에서 시작하기](https://cosuss.github.io/snippet-automation-releases/) · [PC 수집기 0.7.2](https://github.com/cosuss/snippet-automation-releases/releases/tag/collector-v0.7.2)
 
 이 저장소는 웹 빌드 결과와 설치·업데이트 파일을 배포합니다. 개발 소스 저장소는 비공개로 유지합니다. 각 사용자의 기록과 API 키는 각자의 PC에 보관합니다.
 
@@ -31,3 +31,7 @@
 스니펫 게시·Docs/Notion 내보내기·AI 초안·평가·보완에서 오류가 발생하면 알림 창에서 다음 동작을 선택합니다. 결과 확인, 다시 준비, 연결 설정 확인 또는 중단을 선택할 수 있습니다. 자동으로 재전송하지 않으며 새 전송은 확인·승인을 다시 거칩니다. 기존 글 수정은 비교와 교체 승인이 필요합니다.
 
 AI 오류 알림은 PC에 보관하여 재시작 뒤에도 표시합니다. 선택 전에는 다음 예약 AI 전송을 보류하고, 실패한 회차와 같은 시각의 나머지 예약 작업을 자동 재전송하지 않습니다. 이후 새 회차는 기존 자동 작성 설정을 따릅니다. 완료된 초안·평가 단계와 내보내기 선택은 보존합니다.
+
+## OpenAPI 반영 · 0.7.2
+
+선택한 연속 날짜·주차의 본인 게시 글을 최대 50개씩 묶어 조회합니다. 연속된 데일리 100개는 원문 조회가 100회에서 2회로 줄어듭니다. 전송 직전에는 원문을 새로 확인하고, 글이 바뀌면 다시 미리보기와 승인을 받습니다. 날짜·주차·글 ID·페이지 누락·중복 및 수정 권한 기본값을 검사합니다. 오류 알림과 다음 동작 선택은 그대로 유지합니다.
