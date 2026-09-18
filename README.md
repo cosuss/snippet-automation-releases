@@ -1,6 +1,6 @@
 # Snippet Automation 웹 테스트
 
-[웹에서 시작하기](https://cosuss.github.io/snippet-automation-releases/) · [PC 수집기 0.6.0](https://github.com/cosuss/snippet-automation-releases/releases/tag/collector-v0.6.0)
+[웹에서 시작하기](https://cosuss.github.io/snippet-automation-releases/) · [PC 수집기 0.7.0](https://github.com/cosuss/snippet-automation-releases/releases/tag/collector-v0.7.0)
 
 이 저장소는 웹 빌드 결과와 설치·업데이트 파일을 배포합니다. 개발 소스 저장소는 비공개로 유지합니다. 각 사용자의 기록과 API 키는 각자의 PC에 보관합니다.
 
@@ -14,3 +14,14 @@
 회의 도구·Orca·카카오톡은 현재 내보낸 파일 연결을 지원합니다. 해당 서비스의 화면 자동 조작과 Safari 활동 수집은 준비 중입니다. 실제 외부 계정 연결·유료 AI 호출·펄스 게시와 다른 사용자의 최초 설치는 추가 검증이 필요합니다. 펄스 평가 90점은 보장하지 않습니다. 본인 구독 계정 사용에는 공식 AI 실행 도구의 설치·로그인이 필요합니다.
 
 [기존 Electron 앱 안내](https://cosuss.github.io/snippet-automation-releases/desktop/)도 유지합니다. 기존 앱 업데이트와 PC 수집기 업데이트는 별도이며, 기존 앱의 키와 자료를 수집기로 자동 이전하지 않습니다.
+
+## 게시 글을 Google Docs·Notion으로 내보내기
+
+`게시 글 내보내기`에서 본인이 1000.school에 게시한 데일리·위클리를 조회하고 선택합니다. 목적지를 연결하고 미리보기를 확인하면 선택한 글을 새 문서/페이지 하나로 묶어 저장합니다. 저장 본문을 재조회해 일치한 경우 완료로 표시합니다.
+
+- Google Docs: Google Cloud에서 Docs·Drive API를 활성화한 데스크톱 OAuth 클라이언트 ID·보안 비밀을 입력한 뒤 본인 계정으로 로그인합니다. 내 드라이브에 새 문서를 만듭니다. 일반 사용자용 공통 OAuth 프로젝트는 아직 기본 제공하지 않습니다.
+- Notion: 본인의 연결 토큰을 입력하고, 콘텐츠 읽기·삽입 권한을 허용한 상위 페이지 주소를 지정합니다. 해당 페이지 아래 새 페이지를 만듭니다.
+- 자료 수집용 계정 연결과 별개이며 연결 정보는 PC에 암호화해 저장합니다. 댓글·별도 첨부파일·AI 피드백은 포함하지 않습니다. 내보내기 자체는 AI를 호출하지 않습니다.
+- 일부 전송·응답 유실·중단은 확인 필요로 표시하고 자동 재전송하지 않습니다. 이력의 문서 링크로 결과를 먼저 확인할 수 있습니다.
+
+펄스 본인 게시 목록은 실제 계정으로 조회를 확인했습니다. Google Docs·Notion 생성은 합성 응답과 통합 테스트를 통과했으며 실제 계정 생성 검증은 연결 후 진행합니다.
