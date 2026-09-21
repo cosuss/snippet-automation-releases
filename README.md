@@ -1,6 +1,6 @@
 # Snippet Automation 웹 테스트
 
-[웹에서 시작하기](https://cosuss.github.io/snippet-automation-releases/) · [PC 수집기 0.7.3](https://github.com/cosuss/snippet-automation-releases/releases/tag/collector-v0.7.3)
+[웹에서 시작하기](https://cosuss.github.io/snippet-automation-releases/) · [PC 수집기 0.7.4](https://github.com/cosuss/snippet-automation-releases/releases/tag/collector-v0.7.4)
 
 이 저장소는 웹 빌드 결과와 설치·업데이트 파일을 배포합니다. 개발 소스 저장소는 비공개로 유지합니다. 각 사용자의 기록과 API 키는 각자의 PC에 보관합니다.
 
@@ -44,3 +44,7 @@ AI 오류 알림은 PC에 보관하여 재시작 뒤에도 표시합니다. 선�
 - 다시 연결해야 하는 오류(401·토큰 취소·invalid_grant)는 자동으로 재시도하지 않고 재연결을 안내합니다.
 - 폴더를 순회할 때 읽지 못한 항목은 그 항목만 기록하고 나머지 수집을 계속합니다. 원격 자료 중 변경되지 않은 항목은 다시 내려받지 않습니다.
 - AI 응답의 건강도 점수, 문장 교체, 인용 검증을 강화했습니다. 본인 AI 실행 도구의 실행 파일 경로를 제한하고 브라우저 활동 연결의 Host 헤더를 확인합니다.
+
+## 회의록 일시 반영 · 0.7.4
+
+클로바노트·유니브 AI·Smooth AI 내보내기는 회의가 끝난 뒤 며칠 지나 저장되는 경우가 많습니다. 이제 이 회의록 파일은 본문에 적힌 회의 일시(줄 앞의 `일시`·`일자`·`날짜`·`Date` 라벨)를 기록 시각으로 사용해, 데일리·위클리 스니펫에 실제 회의 날짜로 반영합니다. 일시를 찾지 못하면 파일 수정 시각을 쓰며 없는 날짜를 만들지 않습니다. 회의록이 아닌 폴더·Notion·Gmail 등은 그대로입니다.
